@@ -1,22 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import SpinningSquare from "./components/SpinningSquare";
+import Menu from "./components/Menu";
+import GestureBtn from "./components/GestureBtn";
+import Drag from "./components/Drag";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <SpinningSquare />
+        <Menu />
+        <GestureBtn />
+        <Drag />
       </header>
     </div>
   );
